@@ -1,19 +1,19 @@
 #language: pt
 #encoding: UTF-8
 #Autor: Andrew Ferrari
-@login
+@Login
 Funcionalidade: Login
 
-  @loginComSucesso
+  @LoginComSucesso
   Esquema do Cenario: Deve ser possivel logar com sucesso
-    Dado que o usuário digite um <email> e <senha> valida
+    Dado que o usuário digite um <email> e <senha> validos
     E exibir a <mensagem> de logado com sucesso
 
     Exemplos: 
       | email              | senha       | mensagem              |
       | 'andrew@gmail.com' | 'Teste123@' | 'Logado com sucesso!' |
 
-  @loginInvalido
+  @LoginInvalido
   Esquema do Cenario: Nao deve ser possivel realizar o login
     Dado que o usuário digite um <email> e <senha> invalidos
     E exibir a <mensagem> de login nao realizado
