@@ -1,0 +1,5 @@
+browser=chrome
+headless=false
+browserSize=1920x1080
+url=https://demoqa.com/
+timeout=10000
