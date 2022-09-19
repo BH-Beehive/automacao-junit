@@ -21,7 +21,7 @@ public class BrowserProperties {
 	}
 	
 	public String getBrowser() {
-		return this.browser = loadProperties().getProperty("browser");
+		return this.browser = loadProperties().getProperty("browser"); 
 	}
 	
 	public boolean isHeadless() {
@@ -29,14 +29,14 @@ public class BrowserProperties {
 	}
 	
 	public String getBrowserSize() {
-		return this.browserSize = loadProperties().getProperty("browserSize");
+		return this.browserSize = loadProperties().getProperty("browserSize"); 
 	}
 	
 	public String getUrl() {
-		return this.url = loadProperties().getProperty("url");
+		return this.url = loadProperties().getProperty("url"); 
 	}
 	
 	public Long getTimeout() {
 		return this.timeout = Long.parseLong(loadProperties().getProperty("timeout"));
-	}
+	}	
 }

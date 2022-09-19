@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="automacao-beehive" tests="1" started="1" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.Runner" time="0.185">
+    <testsuite name="Login" time="0.185">
+      <testcase name="Deve ser possivel logar com sucesso" classname="Login" time="0.185">
+        <error>java.lang.NullPointerException: Cannot invoke "String.toLowerCase(java.util.Locale)" because "browser.name" is null&#13;
+	at com.codeborne.selenide.webdriver.WebDriverFactory.findFactory(WebDriverFactory.java:117)&#13;
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:98)&#13;
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:69)&#13;
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$1(CreateDriverCommand.java:75)&#13;
+	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:165)&#13;
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:53)&#13;
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:187)&#13;
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:158)&#13;
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:130)&#13;
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)&#13;
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:206)&#13;
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:72)&#13;
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)&#13;
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:70)&#13;
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)&#13;
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)&#13;
+	at com.codeborne.selenide.Selenide.open(Selenide.java:52)&#13;
+	at commons.Browser.openPage(Browser.java:16)&#13;
+	at steps.Hooks.setUpLogin(Hooks.java:19)&#13;
+&#13;
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.&#13;
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:146)&#13;
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.closeWindow(WebDriverThreadLocalContainer.java:215)&#13;
+	at com.codeborne.selenide.WebDriverRunner.closeWindow(WebDriverRunner.java:168)&#13;
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)&#13;
+	at com.codeborne.selenide.Selenide.closeWindow(Selenide.java:209)&#13;
+	at steps.Hooks.tearDwon(Hooks.java:25)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

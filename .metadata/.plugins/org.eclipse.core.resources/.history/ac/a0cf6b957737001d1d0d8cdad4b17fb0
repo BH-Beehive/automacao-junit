@@ -1,0 +1,21 @@
+package steps;
+
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+
+public class LoginSteps {
+	
+	@Dado("que o usuário digite um {string} e {string} validos")
+	public void queOUsuárioDigiteUmEValidos(String string, String string2) {
+	    
+	}
+	@Dado("clicar no botao login")
+	public void clicarNoBotaoLogin() {
+	    
+	}
+	@Entao("exibir a {string} de logado com sucesso")
+	public void exibirADeLogadoComSucesso(String string) {
+	    
+	}
+
+}

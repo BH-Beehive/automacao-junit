@@ -12,9 +12,11 @@ public class Hooks {
 	
 	Browser browser = new Browser();
 	
-	@Before
-	public void setUpIndex() {
-		browser.openPage();
+	
+	
+	@Before(order = 0, value = "@Login")
+	public void setUpLogin() {
+		browser.openPage("Login.html");
 	}
 	
 	@After

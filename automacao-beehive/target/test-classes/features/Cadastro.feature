@@ -2,7 +2,7 @@
 #encoding: UTF-8
 #Autor: Andrew Ferrari
 @Cadastro
-Funcionalidade: Login
+Funcionalidade: Cadastro
 
   @CadastroComSucesso
   Esquema do Cenario: Deve ser possivel realizar o cadastro com sucesso

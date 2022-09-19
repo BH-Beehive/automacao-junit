@@ -1,0 +1,35 @@
+package page;
+
+import org.openqa.selenium.By;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.*;
+import com.codeborne.selenide.SelenideElement;
+
+public class LoginPage {
+	
+	private SelenideElement inputEmail = $(By.id("inputEmailLogin"));
+	
+	private SelenideElement inputSenha = $(By.id("inputSenhaLogin"));
+	
+	private SelenideElement btnLogin = $(By.id("btnEntrar"));
+	
+	private SelenideElement msgLogin = $(By.id(""));
+	
+	public void digitarInputEmail(String email) {
+		inputEmail.sendKeys(email);
+	}
+	
+	public void digitarInputSenha(String senha) {
+		inputSenha.sendKeys(senha);
+	}
+	
+	public void clicarBotaoLogin() {
+		btnLogin.click();
+	}
+	
+//	//Futura validação
+//	public void validarMensagem(String msg) {
+//		
+//	}
+
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="automacao-beehive" tests="4" started="4" failures="0" errors="3" ignored="0">
+  <testsuite name="runner.Runner" time="0.132">
+    <testsuite name="Login" time="0.132">
+      <testcase name="Deve ser possivel logar com sucesso" classname="Login" time="0.077"/>
+      <testcase name="Nao deve ser possivel realizar o login #1" classname="Login" time="0.039">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'que o usuário digite um '' e '' invalidos' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que o usuário digite um {string} e {string} invalidos")
+public void queOUsuárioDigiteUmEInvalidos(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Dado("exibir a {string} de login nao realizado")
+public void exibirADeLoginNaoRealizado(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Nao deve ser possivel realizar o login #2" classname="Login" time="0.007">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'que o usuário digite um '' e 'Teste123@' invalidos' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que o usuário digite um {string} e {string} invalidos")
+public void queOUsuárioDigiteUmEInvalidos(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Dado("exibir a {string} de login nao realizado")
+public void exibirADeLoginNaoRealizado(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Nao deve ser possivel realizar o login #3" classname="Login" time="0.009">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'que o usuário digite um 'andrew@gmail.com' e '' invalidos' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que o usuário digite um {string} e {string} invalidos")
+public void queOUsuárioDigiteUmEInvalidos(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Dado("exibir a {string} de login nao realizado")
+public void exibirADeLoginNaoRealizado(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

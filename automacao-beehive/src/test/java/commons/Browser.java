@@ -7,12 +7,12 @@ public class Browser {
 	
 	BrowserProperties properties = new BrowserProperties();
 	
-	public void openPage() {
+	public void openPage(String finalUrl) {
 		Configuration.timeout = properties.getTimeout();
-		Configuration.browser = properties.getBrowserSize();
+		Configuration.browser = properties.getBrowser();
 		Configuration.browserSize = properties.getBrowserSize();
 		Configuration.headless = properties.isHeadless();
 		Configuration.browserCapabilities.setCapability("applicationCacheEnable", false);
-		Selenide.open(properties.getUrl());
+		Selenide.open(properties.getUrl() + finalUrl);
 	}
 }

@@ -6,21 +6,22 @@ Funcionalidade: Login
 
   @LoginComSucesso
   Esquema do Cenario: Deve ser possivel logar com sucesso
-    Dado que o usuário digite um <email> e <senha> validos
-    E exibir a <mensagem> de logado com sucesso
+    Dado que o usuário digite um <email> e <senha> 
+    E clicar no botao login
+    Entao exibir a <mensagem> 
 
     Exemplos: 
-      | email              | senha       | mensagem              |
-      | 'andrew@gmail.com' | 'Teste123@' | 'Logado com sucesso!' |
+      | email              | senha       | mensagem |
+      | 'andrew@gmail.com' | 'Teste123@' | 'Hive'   |
 
   @LoginInvalido
   Esquema do Cenario: Nao deve ser possivel realizar o login
-    Dado que o usuário digite um <email> e <senha> invalidos
-    E exibir a <mensagem> de login nao realizado
+    Dado que o usuário digite um <email> e <senha> 
+    E clicar no botao login
+    E exibir a <mensagem> 
 
     Exemplos: 
-      | email              | senha       | mensagem                     |
-      | 'andrew@gmail.com' | 'Teste123@' | 'Email e/ou senha inválidos' |
-      | ''                 | ''          | 'Email e/ou senha inválidos' |
-      | ''                 | 'Teste123@' | 'Email e/ou senha inválidos' |
-      | 'andrew@gmail.com' | ''          | 'Email e/ou senha inválidos' |
+      | email              | senha       | mensagem |
+      | ''                 | ''          | 'Entrar' |
+      | ''                 | 'Teste123@' | 'Entrar' |
+      | 'andrew@gmail.com' | ''          | 'Entrar' |

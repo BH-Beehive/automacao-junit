@@ -1,0 +1,4 @@
+browser=chrome
+headless=false
+browserSize=1920x1080
+url=http://localhost:3333/

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="automacao-beehive" tests="1" started="1" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.Runner" time="0.15">
+    <testsuite name="Login" time="0.15">
+      <testcase name="Deve ser possivel logar com sucesso" classname="Login" time="0.15">
+        <error>java.lang.NumberFormatException: Cannot parse null string&#13;
+	at java.base/java.lang.Long.parseLong(Long.java:674)&#13;
+	at java.base/java.lang.Long.parseLong(Long.java:836)&#13;
+	at commons.BrowserProperties.getTimeout(BrowserProperties.java:40)&#13;
+	at commons.Browser.openPage(Browser.java:11)&#13;
+	at steps.Hooks.setUpIndex(Hooks.java:17)&#13;
+&#13;
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.&#13;
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:146)&#13;
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.closeWindow(WebDriverThreadLocalContainer.java:215)&#13;
+	at com.codeborne.selenide.WebDriverRunner.closeWindow(WebDriverRunner.java:168)&#13;
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:152)&#13;
+	at com.codeborne.selenide.Selenide.closeWindow(Selenide.java:209)&#13;
+	at steps.Hooks.tearDwon(Hooks.java:23)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
