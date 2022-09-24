@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="automacao-beehive" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="runner.Runner" time="4.721">
-    <testsuite name="Login" time="4.721">
-      <testcase name="Deve ser possivel logar com sucesso" classname="Login" time="4.721"/>
-    </testsuite>
-  </testsuite>
-</testrun>

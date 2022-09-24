@@ -1,0 +1,21 @@
+package page;
+
+import org.openqa.selenium.By;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.*;
+import com.codeborne.selenide.SelenideElement;
+
+public class CadastroPage {
+	
+	private SelenideElement inputEmail = $(By.id("inputEmail"));
+	
+	private SelenideElement inputSenha = $(By.id("inputSenha"));
+	
+	private SelenideElement inputConfirmarSenha = $(By.id("inputConfirmarSenha"));
+	
+	private SelenideElement btnProximo = $(By.id("botaoProximaEtapa"));
+	
+	private SelenideElement inputRazaoSocial = $(By.id("inputRazaoSocial"));
+	
+	private SelenideElement inputCnpj = $(By.id("inputCnpj"));
+}
