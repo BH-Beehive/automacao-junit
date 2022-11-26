@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 import com.codeborne.selenide.SelenideElement;
 
-public class LoginPage {
+public class 	LoginPage {
 	
 	private SelenideElement inputEmail = $(By.id("inputEmailLogin"));
 	
@@ -13,7 +13,7 @@ public class LoginPage {
 	
 	private SelenideElement btnLogin = $(By.id("btnEntrar"));
 	
-	private SelenideElement sucessLogin = $(By.xpath("//span[.='Hive']"));
+	private SelenideElement sucessLogin = $(By.xpath("//th[.='Nome']"));
 	
 	private SelenideElement erroLogin = $(By.xpath("//h2[.='Entrar']"));
 	

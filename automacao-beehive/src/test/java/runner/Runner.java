@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @CucumberOptions(plugin = {"pretty", "html:target/cucumber-reports/cadastro-reports.html"},
 				 features = "classpath:features",
 				 glue = "steps",
-				 tags = "@Cadastro",
+				 tags = "@Login",
 				 snippets = SnippetType.CAMELCASE,
 				 monochrome = true,
 				 dryRun = false
