@@ -4,8 +4,9 @@
 @Cadastro
 Funcionalidade: Cadastro
 
-  @CadastroComSucesso
+  @CadastroComSucesso @Regressivo
   Esquema do Cenario: Deve ser possivel realizar o cadastro com sucesso
+    Quando o usuario escolher seu plano
     Quando o usuário digitar um <email> e <senha>
     E clicar no botao proximo
     E digitar uma <razaoSocial>
@@ -20,18 +21,20 @@ Funcionalidade: Cadastro
       | email            | senha      | razaoSocial      | cnpj                 | celular          | telefone    | cep        | mensagem |
       | 'hugo@gmail.com' | 'Hugo123@' | 'Hugo Solutions' | '89.347.329/4730-93' | '(11)96443-0846' | '2665-8273' | '04160130' | 'Entrar' |
 
-  @CadastroRepetido
+  @CadastroRepetido @Regressivo
   Esquema do Cenario: nao deve conseguir realizar o cadastro novamente depois de ter ja feito o cadastro com as informacoes iguais
+    Quando o usuario escolher seu plano
     Quando o usuário digitar um <email> e <senha>
     E clicar no botao proximo
-    Entao deve exiibir uma <mensagem> de erro
+    Entao deve aparecer uma <mensagem> de erro
 
     Exemplos:
       | email            | senha      | razaoSocial      | mensagem           |
       | 'hugo@gmail.com' | 'Hugo123@' | 'Hugo Solutions' | 'Email existente!' |
 
-  @CadastroEmailOuSenhaInvalido
+  @CadastroEmailOuSenhaInvalido @Regressivo
   Esquema do Cenario: nao deve realizar o cadastro com informacoes email e senha invalidos
+    Quando o usuario escolher seu plano
     Quando o usuário digitar um <email> e <senha>
     E clicar no botao proximo
     Entao deve aparecer uma <mensagem> de erro
@@ -39,10 +42,10 @@ Funcionalidade: Cadastro
     Exemplos:
       | email              | senha         | mensagem          |
       | 'gustavo@gmail.cm' | 'Gu@1'        | 'Email Inválido!' |
-      | '@gmail.com'       | 'Gustavo123@' | 'Email Inválido!' |
 
   @CadastroEtapa02Invalido
   Esquema do Cenario: nao deve realizar o cadastro com informacoes email e senha invalidos
+    Quando o usuario escolher seu plano
     Quando o usuário digitar um <email> e <senha>
     E clicar no botao proximo
     E digitar uma <razaoSocial>
@@ -53,10 +56,8 @@ Funcionalidade: Cadastro
 
     Exemplos:
       | email               | senha      | razaoSocial | cnpj                 | celular          | telefone    | mensagem                      |
-      | 'gustavo@gmail.com' | 'Hugo123@' | 'BeeHive'   | '05.438.273/0001-31' | '(11)96443-0843' | '2665-8270' | 'Preencha os campos'          |
-      | 'gustavo@gmail.com' | 'Hugo123@' | 'Sptech'    | '05.438.273/0001-3'  | '(11)96443-0843' | '2665-8270' | 'CNPJ inválido!'              |
+      | 'gustavo@gmail.com' | 'Hugo123@' | 'BeeHive'   | ''                   | '(11)96443-0843' | '2665-8270' | 'Preencha os campos'          |
       | 'gustavo@gmail.com' | 'Hugo123@' | 'Sptech'    | 'o5.438.273/00kk-3a' | '(11)96443-0843' | '2665-8270' | 'CNPJ inválido!'              |
       | 'gustavo@gmail.com' | 'Hugo123@' | 'Sptech'    | '05.438.273/0001-31' | '(11)96443-084'  | '2665-8270' | 'Numero de celular inválido!' |
       | 'gustavo@gmail.com' | 'Hugo123@' | 'Sptech'    | '05.438.273/0001-31' | '(11)96443-08##' | '2665-8270' | 'Numero de celular inválido!' |
-      | 'gustavo@gmail.com' | 'Hugo123@' | 'Sptech'    | '05.438.273/0001-31' | '(11)96443-0843' | '1126-653'  | 'Telefone inválido!'          |
       | 'gustavo@gmail.com' | 'Hugo123@' | 'Sptech'    | '05.438.273/0001-31' | '(11)96443-0843' | '400#-892%' | 'Telefone inválido!'          |

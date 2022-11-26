@@ -21,7 +21,12 @@ public class Hooks {
 	
 	@Before(order = 0, value = "@Cadastro")
 	public void setUpCadastro() {
-		browser.openPage("Cadastro.html");
+		browser.openPage("Planos.html");
+	}
+
+	@Before(order = 0, value = "@Suporte")
+	public void setUpSuporte() {
+		browser.openPage("Login.html");
 	}
 	
 	@After

@@ -36,6 +36,8 @@ public class CadastroPage {
 	private SelenideElement msgErro = $(By.xpath("//h2[@class='swal2-title']"));
 	
 	private SelenideElement textoTelaCadastro = $(By.xpath("//p[@class='form-title-cadastro']"));
+
+	private SelenideElement escolherPlanoCadastro = $(By.xpath("//button[.='Adquirir Plano']"));
 	
 	
 	//Métodos
@@ -75,6 +77,10 @@ public class CadastroPage {
 	
 	public void clicarBtnCadastro() {
 		btnCadastrar.click();
+	}
+
+	public void escolherPlano() {
+		escolherPlanoCadastro.click();
 	}
 	
 	public void validarCadastro(String msg) {

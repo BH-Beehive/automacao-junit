@@ -4,23 +4,23 @@
 @Login
 Funcionalidade: Login
 
-  @LoginComSucesso
+  @LoginComSucesso @Regressivo
   Esquema do Cenario: Deve ser possivel logar com sucesso
-    Dado que o usuário digite um <email> e <senha> 
+    Dado que o usuário digite um <email> e <senha>
     E clicar no botao login
-    Entao exibir a <mensagem> 
+    Entao exibir a <mensagem>
 
-    Exemplos: 
-      | email              | senha       | mensagem |
-      | 'andrew@gmail.com' | 'Teste123@' | 'Hive'   |
+    Exemplos:
+      | email                       | senha        | mensagem    |
+      | 'albert_einstein@gmail.com' | 'albert@114' | 'Dashboard' |
 
-  @LoginInvalido
+  @LoginInvalido @Regressivo
   Esquema do Cenario: Nao deve ser possivel realizar o login
-    Dado que o usuário digite um <email> e <senha> 
+    Dado que o usuário digite um <email> e <senha>
     E clicar no botao login
-    E exibir a <mensagem> 
+    Entao deve aparecer uma <mensagem> de erro
 
-    Exemplos: 
+    Exemplos:
       | email              | senha       | mensagem |
       | ''                 | ''          | 'Entrar' |
       | ''                 | 'Teste123@' | 'Entrar' |

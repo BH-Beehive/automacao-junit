@@ -13,7 +13,7 @@ public class 	LoginPage {
 	
 	private SelenideElement btnLogin = $(By.id("btnEntrar"));
 	
-	private SelenideElement sucessLogin = $(By.xpath("//th[.='Nome']"));
+	private SelenideElement sucessLogin = $(By.xpath("//h2[.='Dashboard']"));
 	
 	private SelenideElement erroLogin = $(By.xpath("//h2[.='Entrar']"));
 	
@@ -27,7 +27,7 @@ public class 	LoginPage {
 	}
 
 	public void validarMensagem(String msg) {
-		if(msg.equals("Hive")) {
+		if(msg.equals("Dashboard")) {
 			sucessLogin.shouldBe(exactText(msg));
 		}else {
 			erroLogin.shouldBe(exactText(msg));

@@ -52,4 +52,9 @@ public class CadastroSteps {
 	    cadastroPage.validarCadastro(msg);
 	}
 
+
+	@Quando("o usuario escolher seu plano")
+	public void oUsuarioEscolherSeuPlano() {
+		cadastroPage.escolherPlano();
+	}
 }
