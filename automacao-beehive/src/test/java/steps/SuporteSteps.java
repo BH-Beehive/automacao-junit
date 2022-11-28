@@ -50,5 +50,18 @@ public class SuporteSteps {
     }
 
 
+    @E("clique no botao salvar")
+    public void cliqueNoBotaoSalvar() {
+        suportePage.cliqueBotaoSalavar();
+    }
 
+    @E("clique no botão deletar")
+    public void cliqueNoBotãoDeletar() {
+
+    }
+
+    @E("clique no botao confirme")
+    public void cliqueNoBotaoConfirme() {
+        suportePage.botaoConfirmar();
+    }
 }

@@ -25,8 +25,12 @@ public class SuportePage {
 
     private SelenideElement nomeSuporte = $(By.xpath("//td[.='Gabriel Hugo']"));
 
-    public void cliqueBotaoNovo() {
-        btnNovo.click();
+    private SelenideElement btnSalvar = $(By.xpath("//button[.='SALVAR']"));
+
+    private SelenideElement btnComfirm = $(By.xpath("//button[.='Sim, excluir!']"));
+
+    private SelenideElement btnEdit = $(By.xpath("//button[@class='button-table editar']"));
+    public void cliqueBotaoNovo() { btnNovo.click();
     }
 
     public void inserirNomeSuporte(String nome) {
@@ -55,6 +59,18 @@ public class SuportePage {
 
     public void cliqueBotaoCadastrar() {
         btnCadastro.click();
+    }
+
+    public void cliqueBotaoSalavar() {
+        btnSalvar.click();
+    }
+
+    public void botaoConfirmar() {
+        btnComfirm.click();
+    }
+
+    public void botaoEdit() {
+        btnEdit.click();
     }
 
     public void validarCadastro(String nome) {

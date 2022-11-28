@@ -18,8 +18,8 @@ Funcionalidade: Cadastro
     Entao deve exiibir uma <mensagem> de cadastrado realizado com sucesso
 
     Exemplos:
-      | email            | senha      | razaoSocial      | cnpj                 | celular          | telefone    | cep        | mensagem |
-      | 'hugo@gmail.com' | 'Hugo123@' | 'Hugo Solutions' | '89.347.329/4730-93' | '(11)96443-0846' | '2665-8273' | '04160130' | 'Entrar' |
+      | email              | senha      | razaoSocial      | cnpj                 | celular          | telefone    | cep        | mensagem |
+      | 'hugoz2@gmail.com' | 'Hugo123@' | 'Hugo Solutions' | '89.347.329/4732-92' | '(11)91143-0847' | '2361-8674' | '04831110' | 'Entrar' |
 
   @CadastroRepetido @Regressivo
   Esquema do Cenario: nao deve conseguir realizar o cadastro novamente depois de ter ja feito o cadastro com as informacoes iguais
@@ -29,8 +29,8 @@ Funcionalidade: Cadastro
     Entao deve aparecer uma <mensagem> de erro
 
     Exemplos:
-      | email            | senha      | razaoSocial      | mensagem           |
-      | 'hugo@gmail.com' | 'Hugo123@' | 'Hugo Solutions' | 'Email existente!' |
+      | email              | senha      | razaoSocial      | mensagem           |
+      | 'hugoz2@gmail.com' | 'Hugo123@' | 'Hugo Solutions' | 'Email existente!' |
 
   @CadastroEmailOuSenhaInvalido @Regressivo
   Esquema do Cenario: nao deve realizar o cadastro com informacoes email e senha invalidos
@@ -40,10 +40,10 @@ Funcionalidade: Cadastro
     Entao deve aparecer uma <mensagem> de erro
 
     Exemplos:
-      | email              | senha         | mensagem          |
-      | 'gustavo@gmail.cm' | 'Gu@1'        | 'Email Inválido!' |
+      | email              | senha  | mensagem          |
+      | 'gustavo@gmail.cm' | 'Gu@1' | 'Email Inválido!' |
 
-  @CadastroEtapa02Invalido
+  @CadastroEtapa02Invalido @Regressivo
   Esquema do Cenario: nao deve realizar o cadastro com informacoes email e senha invalidos
     Quando o usuario escolher seu plano
     Quando o usuário digitar um <email> e <senha>
