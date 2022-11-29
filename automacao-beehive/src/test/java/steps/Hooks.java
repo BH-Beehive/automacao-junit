@@ -28,6 +28,11 @@ public class Hooks {
 	public void setUpSuporte() {
 		browser.openPage("Login.html");
 	}
+
+	@Before(order = 0, value = "@Maquina")
+	public void setUpMaquina() {
+		browser.openPage("Login.html");
+	}
 	
 	@After
 	public void tearDwon(Scenario scenario) {

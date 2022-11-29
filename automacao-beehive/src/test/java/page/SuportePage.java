@@ -29,32 +29,78 @@ public class SuportePage {
 
     private SelenideElement btnComfirm = $(By.xpath("//button[.='Sim, excluir!']"));
 
+    private SelenideElement btnExcluir = $(By.xpath("//button[@class='button-table excluir']"));
+
     private SelenideElement btnEdit = $(By.xpath("//button[@class='button-table editar']"));
-    public void cliqueBotaoNovo() { btnNovo.click();
+
+    private SelenideElement inputNomeSuporteEdit = $(By.id("inputNomeSuporteEditar"));
+
+    private SelenideElement inputEmailSlackEdit = $(By.id("inputEmailSuporteEditar"));
+
+    private SelenideElement inputSenhaEdit = $(By.id("inputSenhaSuporteEditar"));
+
+    private SelenideElement inputCpfEdit = $(By.id("inputCpfEditar"));
+
+    private SelenideElement inputTelEdit = $(By.id("inputTelSuporteEditar"));
+
+    private SelenideElement inputCelEdit = $(By.id("inputCelSuporteEditar"));
+
+    public void cliqueBotaoNovo() {
+        btnNovo.click();
     }
 
-    public void inserirNomeSuporte(String nome) {
-        inputSuporte.sendKeys(nome);
+    public void inserirNomeSuporte(String nome, Boolean isEdit) {
+        if(isEdit) {
+            inputNomeSuporteEdit.sendKeys(nome);
+        }else {
+            inputSuporte.sendKeys(nome);
+        }
+
     }
 
-    public void inserirEmailSlack(String email) {
-        inputSlack.sendKeys(email);
+    public void inserirEmailSlack(String email, Boolean isEdit) {
+        if(isEdit) {
+            inputEmailSlackEdit.sendKeys(email);
+        }else {
+            inputSlack.sendKeys(email);
+        }
+
     }
 
-    public void inserirSenha(String senha) {
-        inputSenha.sendKeys(senha);
+    public void inserirSenha(String senha, Boolean isEdit) {
+        if(isEdit) {
+            inputSenhaEdit.sendKeys(senha);
+        }else {
+            inputSenha.sendKeys(senha);
+        }
+
     }
 
-    public void inserirCpf(String cpf) {
-        inputCpf.sendKeys(cpf);
+    public void inserirCpf(String cpf, Boolean isEdit) {
+        if(isEdit) {
+            inputCpfEdit.sendKeys(cpf);
+        }else {
+            inputCpf.sendKeys(cpf);
+        }
+
     }
 
-    public void inserirTelefone(String fone) {
-        inputTelefone.sendKeys(fone);
+    public void inserirTelefone(String fone, Boolean isEdit) {
+        if(isEdit) {
+            inputTelEdit.sendKeys(fone);
+        }else {
+            inputTelefone.sendKeys(fone);
+        }
+
     }
 
-    public void inserirCelular(String cell) {
-        inputCelular.sendKeys(cell);
+    public void inserirCelular(String cell, Boolean isEdit) {
+        if(isEdit) {
+            inputCelEdit.sendKeys(cell);
+        }else {
+            inputCelular.sendKeys(cell);
+        }
+
     }
 
     public void cliqueBotaoCadastrar() {
@@ -71,6 +117,10 @@ public class SuportePage {
 
     public void botaoEdit() {
         btnEdit.click();
+    }
+
+    public void botaoExcluir() {
+        btnExcluir.click();
     }
 
     public void validarCadastro(String nome) {

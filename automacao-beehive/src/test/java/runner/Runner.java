@@ -7,10 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber-reports/Regressivo-reports.html"},
+@CucumberOptions(plugin = {"pretty", "html:target/cucumber-reports/Cadastro-reports.html"},
 				 features = "classpath:features",
 				 glue = "steps",
-				 tags = "@Regressivo",
+				 tags = "@CadastrarMaquina",
 				 snippets = SnippetType.CAMELCASE,
 				 monochrome = true,
 				 dryRun = false
